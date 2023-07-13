@@ -1,7 +1,17 @@
-for i in range(2, 10, 3):
+# Определите размеры сетки
+columns = 3
+rows = 2
+
+# Итерация по строкам
+for i in range(rows):
+    # Итерация по столбцам
     for j in range(2, 11):
-        row = []
-        for k in range(i, min(i + 3, 10)):
-            row.append(f"{k} x {j} = {k*j}")
-        print("   ".join(row))
-    print("---------------------------")
+        line = ""
+        # Итерация по таблицам в столбце
+        for k in range(columns):
+            table_num = k*rows + i + 2
+            if table_num > 9:
+                break
+            line += f"{table_num} x {j} = {table_num*j}   "
+        print(line)
+    print("------------------------------------------------")
