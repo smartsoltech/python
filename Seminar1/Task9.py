@@ -1,6 +1,8 @@
+
+
 # Определите размеры сетки
-columns = 3
-rows = 2
+columns = 2
+rows = 3
 
 # Итерация по строкам
 for i in range(rows):
@@ -12,6 +14,6 @@ for i in range(rows):
             table_num = k*rows + i + 2
             if table_num > 9:
                 break
-            line += f"{table_num} x {j} = {table_num*j}   "
+            line += f"{table_num}x{j}   =   {table_num*j}   "
         print(line)
     print("------------------------------------------------")
