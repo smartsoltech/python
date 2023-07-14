@@ -6,8 +6,17 @@
 
 from random import randint
 
+MIN_RANGE = 0
+MAX_RANGE = 1000
+
 def guess_number():
-    num = randint(0, 1000)
+    """ Игра Угадай число
+        Пользователь должен угадать загаданное компьютером число
+
+    Returns:
+        str: Ответ, угадал пользователь или нет
+    """
+    num = randint(MIN_RANGE, MAX_RANGE)
     attempts = 10
     while attempts > 0:
         guess = int(input("Введите число: "))
