@@ -1,14 +1,35 @@
 from fractions import Fraction
 
 def integer_to_hex(num):
+    """
+    Преобразует целое число в его шестнадцатеричное строковое представление.
+
+    Аргументы:
+    - num (int): Целое число.
+
+    Возвращает:
+    - str: Шестнадцатеричное представление целого числа.
+    """
     return hex(num)[2:]
 
 def calculate_fraction(input_string):
+    """
+    Вычисляет дробь на основе входной строки в формате "a/b".
+
+    Аргументы:
+    - input_string (str): Входная строка в формате "a/b", где a - числитель, b - знаменатель.
+
+    Возвращает:
+    - Fraction: Результат дроби, представленный в виде объекта Fraction из модуля fractions.
+    """
     numerator, denominator = map(int, input_string.split('/'))
     fraction = Fraction(numerator, denominator)
     return fraction
 
 def program_1():
+    """
+    Программа 1: Шестнадцатеричное представление целого числа.
+    """
     num = int(input("Введите целое число: "))
     hex_string = integer_to_hex(num)
     print("Шестнадцатеричное представление:", hex_string)
@@ -21,6 +42,9 @@ def program_1():
         print("Результат неверный. Ожидаемый результат:", expected_hex_string)
 
 def program_2():
+    """
+    Программа 2: Сумма и произведение дробей.
+    """
     fraction1 = input("Введите первую дробь в формате a/b: ")
     fraction2 = input("Введите вторую дробь в формате a/b: ")
 
@@ -41,6 +65,9 @@ def program_2():
         print("Ожидаемое произведение:", expected_product_fraction)
 
 def main():
+    """
+    Главная функция программы.
+    """
     while True:
         print("Меню:")
         print("1 - Программа 1: Шестнадцатеричное представление целого числа")
