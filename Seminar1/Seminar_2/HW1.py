@@ -14,6 +14,12 @@ def program_1():
     print("Шестнадцатеричное представление:", hex_string)
     print("Проверка:", hex(num))
 
+    expected_hex_string = hex(num)[2:]
+    if hex_string == expected_hex_string:
+        print("Результат верный.")
+    else:
+        print("Результат неверный. Ожидаемый результат:", expected_hex_string)
+
 def program_2():
     fraction1 = input("Введите первую дробь в формате a/b: ")
     fraction2 = input("Введите вторую дробь в формате a/b: ")
@@ -23,6 +29,16 @@ def program_2():
 
     print("Сумма дробей:", sum_fraction)
     print("Произведение дробей:", product_fraction)
+
+    expected_sum_fraction = Fraction(fraction1) + Fraction(fraction2)
+    expected_product_fraction = Fraction(fraction1) * Fraction(fraction2)
+
+    if sum_fraction == expected_sum_fraction and product_fraction == expected_product_fraction:
+        print("Результат верный.")
+    else:
+        print("Результат неверный.")
+        print("Ожидаемая сумма:", expected_sum_fraction)
+        print("Ожидаемое произведение:", expected_product_fraction)
 
 def main():
     while True:
