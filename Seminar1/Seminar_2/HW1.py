@@ -8,24 +8,38 @@ def calculate_fraction(input_string):
     fraction = Fraction(numerator, denominator)
     return fraction
 
-def main():
-    # Пример использования функции integer_to_hex
+def program_1():
     num = int(input("Введите целое число: "))
     hex_string = integer_to_hex(num)
     print("Шестнадцатеричное представление:", hex_string)
     print("Проверка:", hex(num))
 
-    # Пример использования функции calculate_fraction
+def program_2():
     fraction1 = input("Введите первую дробь в формате a/b: ")
     fraction2 = input("Введите вторую дробь в формате a/b: ")
 
-    # Сумма дробей
     sum_fraction = calculate_fraction(fraction1) + calculate_fraction(fraction2)
-    # Произведение дробей
     product_fraction = calculate_fraction(fraction1) * calculate_fraction(fraction2)
 
     print("Сумма дробей:", sum_fraction)
     print("Произведение дробей:", product_fraction)
+
+def main():
+    while True:
+        print("Меню:")
+        print("1 - Программа 1: Шестнадцатеричное представление целого числа")
+        print("2 - Программа 2: Сумма и произведение дробей")
+        print("0 - Выход")
+
+        choice = input("Выберите программу (введите номер): ")
+        if choice == "1":
+            program_1()
+        elif choice == "2":
+            program_2()
+        elif choice == "0":
+            break
+        else:
+            print("Неверный выбор. Попробуйте снова.")
 
 if __name__ == "__main__":
     main()
