@@ -5,7 +5,7 @@
 MIN_RANGE = 0
 MAX_RANGE = 10000
 
-def check_prime(n: int):
+def check_prime(n: int) -> str:
     """Проверка числа на натуральность и простоту
 
     Args:
