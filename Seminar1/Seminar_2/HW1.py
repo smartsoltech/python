@@ -10,8 +10,8 @@ def integer_to_hex(num:int)-> str:
     Возвращает:
     - str: Шестнадцатеричное представление целого числа.
     """
-    if num == 0:
-        return "0"
+    # if num == 0:
+    #     return "0"
     result = ""
     while num > 0:
         remainder = num % 16
@@ -22,7 +22,7 @@ def integer_to_hex(num:int)-> str:
         num = num // 16
     return result
 
-def calculate_fraction(fraction1_str: str , fraction2_str: str):
+def calculate_fraction(fraction1_str, fraction2_str):
     """
     Вычисляет сумму и произведение дробей.
 
@@ -82,7 +82,8 @@ def program_2():
     expected_sum_fraction = Fraction(fraction1_str) + Fraction(fraction2_str)
     expected_product_fraction = Fraction(fraction1_str) * Fraction(fraction2_str)
 
-    if sum_fraction == (expected_sum_fraction.numerator, expected_sum_fraction.denominator) and product_fraction == (expected_product_fraction.numerator, expected_product_fraction.denominator):
+    if sum_fraction == (expected_sum_fraction.numerator, expected_sum_fraction.denominator) \
+        and product_fraction == (expected_product_fraction.numerator, expected_product_fraction.denominator):
         print("Результат верный.")
     else:
         print("Результат неверный.")
