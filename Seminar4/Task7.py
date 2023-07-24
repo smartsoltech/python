@@ -9,9 +9,9 @@ def calculate_profit(companies):
     return result, all_profitable
 
 companies = {
-    "Company1": [1000, -500, 200, -300],
+    "Company1": [1000, -500, 200, -300,-2500],
     "Company2": [2000, -1000, 500, -500],
-    "Company3": [1500, -700, 300, -200, -800,-850]
+    "Company3": [1500, -700, 300, -200, -800,]
 }
 
 print(calculate_profit(companies))
