@@ -1,4 +1,9 @@
 def create_dict(**kwargs):
+    """Функция упаковки словаря
+
+    Returns:
+        dict: Упакованный словарь
+    """
     result = {}
     for key, value in kwargs.items():
         try:
