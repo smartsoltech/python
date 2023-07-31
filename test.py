@@ -1,15 +1,4 @@
-# def simple_generator():
-#     yield 1
-#     yield 2
-#     yield 3
+# print("\n\n".join(["\n".join([f"{j:2} * {i:^2} = {i * j:2}\t\t{j + 1:2} * {i:^2} = {i * (j + 1):2}\t\t{j + 2:2} * {i:^2} = {i * (j + 2):2}\t\t{j + 3:2} * {i:^2} = {i * (j + 3):2}" 
+#                               for i in range(2, 11)]) 
+#                    for j in range(2, 10, 4)]))
 
-# for value in simple_generator():
-#     print(value)
-
-
-
-import random
-random_iter = iter(lambda: random.randint(0, 5), 2)
-
-for num in random_iter:
-    print(num)

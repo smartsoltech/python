@@ -12,4 +12,4 @@ def create_dict(**kwargs):
             result[str(value)] = key
     return result
 
-print(create_dict(a=1, b=2, c=[3, 4, 5]))
+print(create_dict(a=1, b='2', c=[3, 4, 5]))
