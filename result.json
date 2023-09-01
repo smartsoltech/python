@@ -1,0 +1,14 @@
+[
+    {
+        "name": "get-pip.py",
+        "parent": "temp",
+        "type": "file",
+        "size": 2592905
+    },
+    {
+        "name": "AUtempR",
+        "parent": "temp",
+        "type": "directory",
+        "size": 0
+    }
+]
