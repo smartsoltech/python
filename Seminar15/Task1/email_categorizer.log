@@ -1,1 +1,6 @@
 INFO:root:¬¬¬Ñ¬ä¬Ö¬Ô¬à¬â¬Ú¬Ù¬Ñ¬è¬Ú¬ñ ¬å¬ã¬á¬Ö¬ê¬ß¬à ¬Ù¬Ñ¬Ó¬Ö¬â¬ê¬Ö¬ß¬Ñ. ¬²¬Ö¬Ù¬å¬Ý¬î¬ä¬Ñ¬ä¬í ¬ã¬à¬ç¬â¬Ñ¬ß¬Ö¬ß¬í ¬Ó result.csv.
+ERROR:root:¬°¬ê¬Ú¬Ò¬Ü¬Ñ ¬á¬â¬Ú ¬é¬ä¬Ö¬ß¬Ú¬Ú YAML-¬æ¬Ñ¬Û¬Ý¬Ñ: 'cp949' codec can't decode byte 0xd1 in position 26: illegal multibyte sequence
+ERROR:root:¬°¬ê¬Ú¬Ò¬Ü¬Ñ ¬á¬â¬Ú ¬é¬ä¬Ö¬ß¬Ú¬Ú YAML-¬æ¬Ñ¬Û¬Ý¬Ñ: 'cp949' codec can't decode byte 0xd1 in position 26: illegal multibyte sequence
+ERROR:root:¬°¬ê¬Ú¬Ò¬Ü¬Ñ ¬á¬â¬Ú ¬é¬ä¬Ö¬ß¬Ú¬Ú YAML-¬æ¬Ñ¬Û¬Ý¬Ñ: 'cp949' codec can't decode byte 0xd1 in position 58: illegal multibyte sequence
+INFO:root:¬¬¬Ñ¬ä¬Ö¬Ô¬à¬â¬Ú¬Ù¬Ñ¬è¬Ú¬ñ ¬å¬ã¬á¬Ö¬ê¬ß¬à ¬Ù¬Ñ¬Ó¬Ö¬â¬ê¬Ö¬ß¬Ñ. ¬²¬Ö¬Ù¬å¬Ý¬î¬ä¬Ñ¬ä¬í ¬ã¬à¬ç¬â¬Ñ¬ß¬Ö¬ß¬í ¬Ó .\result1.csv.
+INFO:root:¬¬¬Ñ¬ä¬Ö¬Ô¬à¬â¬Ú¬Ù¬Ñ¬è¬Ú¬ñ ¬å¬ã¬á¬Ö¬ê¬ß¬à ¬Ù¬Ñ¬Ó¬Ö¬â¬ê¬Ö¬ß¬Ñ. ¬²¬Ö¬Ù¬å¬Ý¬î¬ä¬Ñ¬ä¬í ¬ã¬à¬ç¬â¬Ñ¬ß¬Ö¬ß¬í ¬Ó .\result3.csv.

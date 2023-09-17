@@ -3,40 +3,86 @@ Account:
 - email
 - username
 - profile
+- аккаунт
+- профиль
+- регистрация
+- вход
+- выход
+- доступ
 Advertising and Collaboration:
 - advertise
 - partnership
 - collaboration
 - sponsor
+- реклама
+- сотрудничество
+- партнерство
+- бренд
+- продвижение
 Features:
 - feature
 - wishlist
 - update
 - new
+- функционал
+- возможность
+- функция
+- новинка
+- опция
 Limits:
 - limit
 - exceed
 - restriction
 - quota
+- лимит
+- ограничение
+- предел
+
 Payments:
 - payment
 - transaction
 - credit card
 - invoice
+- оплата
+- платеж
+- счет
+- банковская карта
+- транзакция
+
 Refunds:
 - refund
 - money back
 - return
 - exchange
+- возврат
+- возмещение
+- отмена
+- деньги
+- средства
+- заказ
+
 Security:
 - password
 - unauthorized
 - login
 - security
 - hacked
+- безопасность
+- пароль
+- взлом
+- защита
+- подозрительная активность
+- код доступа
+
 Troubleshooting:
 - not working
 - error
 - issue
 - help
 - support
+- проблема
+- не работает
+- ошибка
+- падение
+- сбой
+- зависает

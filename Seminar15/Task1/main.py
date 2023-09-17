@@ -16,7 +16,7 @@ def load_keywords_from_yaml(file_path):
     - dict: Словарь с категориями и ключевыми словами.
     """
     try:
-        with open(file_path, 'r') as yaml_file:
+        with open(file_path, 'r', encoding='utf-8') as yaml_file:
             return yaml.safe_load(yaml_file)
     except Exception as e:
         logging.error(f"Ошибка при чтении YAML-файла: {e}")
@@ -38,7 +38,7 @@ def categorize_emails(df, categories_keywords):
         categorized_df[category] = 0
 
     for index, row in df.iterrows():
-        email_content = row['A1'].lower()
+        email_content = row['E-mail'].lower()
         for category, keywords in categories_keywords.items():
             for keyword in keywords:
                 if re.search(r'\b' + re.escape(keyword) + r'\b', email_content):
@@ -59,7 +59,7 @@ def main(input_csv, output_csv, yaml_file):
     logging.basicConfig(filename='email_categorizer.log', level=logging.INFO)
 
     try:
-        df = pd.read_csv(input_csv, header=None, names=['A1'])
+        df = pd.read_csv(input_csv, header=None, names=['E-mail'])
     except Exception as e:
         logging.error(f"Ошибка при чтении CSV-файла: {e}")
         return
